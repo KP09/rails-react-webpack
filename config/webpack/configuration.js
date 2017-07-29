@@ -34,5 +34,12 @@ module.exports = {
   settings,
   env,
   loadersDir,
-  output
+  output,
+  plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
+    ]
 }

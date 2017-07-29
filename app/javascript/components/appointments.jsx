@@ -11,6 +11,8 @@ import AppointmentForm from './appointment_form'
 // Imported named constants
 import { AppointmentsList } from './appointments_list'
 
+import $ from 'jquery'
+
 export default class Appointments extends React.Component {
   constructor(props) {
     super(props);
